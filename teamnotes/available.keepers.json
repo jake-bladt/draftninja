@@ -1,5 +1,17 @@
 [
   {
+    "name": "Dansby Swanson",
+    "position": "SS",
+    "inRound": 24,
+    "wasPickup": false
+  },
+  {
+    "name": "Addison Russel",
+    "position": "SS",
+    "inRound": 12,
+    "wasPickup": false
+  },
+  {
     "name": "Carlos Beltran",
     "position": "OF",
     "inRound": 23,

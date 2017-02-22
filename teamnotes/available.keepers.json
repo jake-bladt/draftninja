@@ -1,5 +1,23 @@
 [
   {
+    "name": "Carlos Beltran",
+    "position": "OF",
+    "inRound": 23,
+    "wasPickup": false
+  },
+  {
+    "name": "Lorenzo Cain",
+    "position": "OF",
+    "inRound": 13,
+    "wasPickup": false
+  },
+  {
+    "name": "Starlin Castro",
+    "position": "2B",
+    "inRound": 16,
+    "wasPickup": false
+  },
+  {
     "name": "Ender Inciarte",
     "position": "OF",
     "inRound": 14,

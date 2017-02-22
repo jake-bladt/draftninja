@@ -1,5 +1,23 @@
 [
   {
+    "name": "Ender Inciarte",
+    "position": "OF",
+    "inRound": 14,
+    "wasPickup": false
+  },
+  {
+    "name": "Joc Pederson",
+    "position": "OF",
+    "inRound": 9,
+    "wasPickup": false
+  },
+  {
+    "name": "Rick Porcello",
+    "position": "SP",
+    "inRound": 15,
+    "wasPickup": true
+  },
+  {
     "name": "Jake Odorizzi",
     "position": "SP",
     "inRound": 10

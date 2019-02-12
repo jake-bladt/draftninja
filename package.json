@@ -1,0 +1,10 @@
+{
+  "name": "draftninja",
+  "version": "1.0.0",
+  "description": "A draft assistant for 2019 fantasy baseball",
+  "main": "index.js",
+  "repository": "git@github.com:jake-bladt/draftninja.git",
+  "author": "Jake Bladt <jake@jakebladt.com>",
+  "license": "MIT",
+  "private": false
+}

@@ -6,5 +6,8 @@
   "repository": "git@github.com:jake-bladt/draftninja.git",
   "author": "Jake Bladt <jake@jakebladt.com>",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "dependencies": {
+    "csv-parse": "^4.3.1"
+  }
 }

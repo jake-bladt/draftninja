@@ -1,5 +1,5 @@
 declare function require(name:string);
-const fs = require('./fs');
+const fs = require('fs');
 
 class ProjectionImporter {
 
@@ -10,9 +10,15 @@ class ProjectionImporter {
     }
 
     public importFromTsv() : boolean {
-
+        fs.readFile(this._filePath, 'utf8', (err, contents) => {
+            const lines: string[] = contents.split(/\r\n|\r|\n/);
+            lines.forEach((line, index) => {
+                console.log(`Line #${index}: ${line}`);
+            });
+        });
         return false;
     }
 }
 
-let importer = new ProjectionImporter('../notes/custom-rankings.all.tsv');
+let importer = new ProjectionImporter('../notes/custom-rankings-all.tsv');
+importer.importFromTsv();

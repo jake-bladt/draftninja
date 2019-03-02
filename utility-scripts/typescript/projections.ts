@@ -52,13 +52,10 @@ class ProjectionImporter {
             const headers: string[] = this._parseLine(lines[1]); // Two-line header. Disregard first line.
 
             const body: string[] = lines.slice(2);
-            const players: Player[] = [];
+            const players: Player[] = body.map(line => this._getPlayer(line, headers));
+            const source: string = `const playerUniverse = ${JSON.stringify(players, null, 2)};`;
+            console.log(source);
 
-            body.forEach((line) => {
-                const player: Player = this._getPlayer(line, headers);
-                console.log(player.name);
-                console.log(player["pos"]);
-            });
         });
         return true;
     }

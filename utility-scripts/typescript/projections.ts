@@ -54,7 +54,7 @@ class ProjectionImporter {
             const body: string[] = lines.slice(2);
             const players: Player[] = body.map(line => this._getPlayer(line, headers));
             const source: string = `const playerUniverse = ${JSON.stringify(players, null, 2)};`;
-            fs.writeFile('../site/stats.js', source);
+            fs.writeFile('../site/stats.js', source, (err) => console.log(err));
 
         });
         return true;

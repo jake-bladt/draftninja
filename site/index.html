@@ -1,14 +1,13 @@
 <!doctype html>
 <html>
     <title>Draft Ninja</title>
-    <script src="stats.js"></script>
     <body>
         <h1>Players</h1>
         <div id="playerNames"></div>
         <script src="stats.js"></script>
         <script>
             (() => {
-                playerUniverse.foreach(player => console.log(player.name));
+                playerUniverse.forEach(player => console.log(player.name));
             })();            
         </script>
     </body>

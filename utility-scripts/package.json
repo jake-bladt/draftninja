@@ -1,0 +1,9 @@
+{
+  "name": "utility-scripts",
+  "version": "1.0.0",
+  "description": "Utility scripts for DraftNinja",
+  "main": "index.js",
+  "repository": "https://github.com/jake-bladt/draftninja",
+  "author": "Jake",
+  "license": "MIT"
+}

@@ -2,9 +2,9 @@ declare function require(name:string);
 const fs = require('fs');
 
 class Player {
-    private _name: string;
-    get name(): string { return this._name; }
-    set name(val: string) { this._name = val; }
+    private name: string;
+    get playerName(): string { return this.name; }
+    set playerName(val: string) { this.name = val; }
 }
 
 class ProjectionImporter {

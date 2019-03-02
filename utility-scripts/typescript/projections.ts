@@ -9,6 +9,10 @@ class ProjectionImporter {
         this._filePath = filePath;
     }
 
+    private _parseLine(line: string) : string[] {
+        return line.split('\t');
+    }
+
     public importFromTsv() : boolean {
         fs.readFile(this._filePath, 'utf8', (err, contents) => {
             const lines: string[] = contents.split(/\r\n|\r|\n/);

@@ -7,7 +7,15 @@
         <script src="stats.js"></script>
         <script>
             (() => {
-                playerUniverse.forEach(player => console.log(player.name));
+                const homeDiv = document.querySelector('#playerNames');
+                const namesUl = document.createElement('ul');
+                homeDiv.appendChild(namesUl);
+
+                playerUniverse.forEach(player => {
+                    const li = document.createElement('li');
+                    li.appendChild(document.createTextNode(player.name));
+                    namesUl.appendChild(li);
+                });
             })();            
         </script>
     </body>

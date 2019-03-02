@@ -11,6 +11,10 @@ class ProjectionImporter {
 
     private _filePath: string;
 
+    private _fieldMappings = {
+        "Player": "name"
+    }
+
     constructor(filePath: string) {
         this._filePath = filePath;
     }
@@ -24,7 +28,11 @@ class ProjectionImporter {
         const stats: string[] = this._parseLine(line);
         stats.forEach((stat, index) => {
             const statName: string = headers[index];
-            ret[statName] = stat;
+            if(statName in this._fieldMappings) {
+                ret[this._fieldMappings[statName]] = stat;
+            } else {
+                ret[statName] = stat;
+            }
         });
 
         return ret;
@@ -40,7 +48,7 @@ class ProjectionImporter {
 
             body.forEach((line) => {
                 const player: Player = this._getPlayer(line, headers);
-                console.log(player["Player"]);
+                console.log(player.name);
             });
         });
         return true;

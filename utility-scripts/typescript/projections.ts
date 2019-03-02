@@ -16,8 +16,10 @@ class ProjectionImporter {
     public importFromTsv() : boolean {
         fs.readFile(this._filePath, 'utf8', (err, contents) => {
             const lines: string[] = contents.split(/\r\n|\r|\n/);
-            lines.forEach((line, index) => {
-                console.log(`Line #${index}: ${line}`);
+            const headers: string[] = this._parseLine(lines[0]);
+
+            lines.slice(1).forEach((line, index) => {
+                if(index < 50) console.log(`Line #${index}: ${line}`);
             });
         });
         return false;

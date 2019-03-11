@@ -8,6 +8,7 @@
   "license": "MIT",
   "scripts": {
     "cbuild": "tsc projections.ts -t es6 -w --outDir ..",
-    "build": "tsc projections.ts -t es6 --outDir .."
+    "build": "tsc projections.ts -t es6 --outDir ..",
+    "buildes5": "tsc projections.ts -t es5 --outDir .."
   }
 }

@@ -1,0 +1,18 @@
+.layout-wrapper{
+    height: 100%;
+}
+ 
+.flex-wrapper{
+    height: 100%;
+}
+
+mat-tab-group {
+    text-align: center;
+    color: red;
+    border-bottom: 4px black;
+}
+ 
+mat-tab-group p {
+    padding-top: 20px;
+    color: red;
+}

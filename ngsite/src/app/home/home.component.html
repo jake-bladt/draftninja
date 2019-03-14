@@ -1,0 +1,18 @@
+<section fxLayout="column wrap">
+  <div fxFlexAlign="center">
+    <p>Draft Ninja</p>
+  </div>
+ 
+  <mat-tab-group (selectedTabChange)="executeSelectedChange($event)">
+    <mat-tab label="Available"> 
+      <p>List of available players</p> 
+    </mat-tab>
+    <mat-tab label="My Team">
+       <p>List of my team</p>
+      </mat-tab>
+    <mat-tab label="Unavailable">
+       <p>Unavailable or undraftable players</p>
+      </mat-tab>
+  </mat-tab-group>
+
+</section>
